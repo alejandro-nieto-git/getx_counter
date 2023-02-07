@@ -7,7 +7,7 @@ class SecondView extends GetView<HomeController> {
   Widget build(context) => Scaffold(
       appBar: AppBar(title: Text("Second counter")),
       body: Center(
-        child: Obx(() => Text("${controller.count}")),
+        child: Obx(() => Text("${controller.getCount}")),
       ),
       floatingActionButton: FloatingActionButton(
         child: Icon(Icons.add),
